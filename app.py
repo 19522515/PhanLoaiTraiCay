@@ -8,7 +8,7 @@ from timeit import default_timer as timer
 from typing import Tuple, Dict
 
 # Setup class names
-class_names = ["apple", "avocado", "banana", "clementine", "coconut", "chico", "dragonfruit", "durian", "grape", "jackfruit", "lime", "longan", "lychee", "orange", "papaya", "pineapple", "pomegranate", "strawberry", "watermelon"]
+class_names = ["Táo (Apple)", "Bơ (Avocado)", "Chuối (Banana)", "Hồng Xiêm (Sapoche)", "Quýt (Clementine)", "Dừa (Coconut)", "Thanh Long (Dragonfruit)", "Sầu Riêng (Durian)", "Nho (Grape)", "Bưởi (Jackfruit)", "Chanh (Lime)", "Nhãn (Longan)", "Vải (Lychee)", "Cam (Orange)", "Đu Đủ (Papaya)", "Dứa (Pineapple)", "Lựu (Pomegranate)", "Dâu (Strawberry)", "Dưa Hấu (Watermelon)"]
 
 ### 2. Model and transforms preparation ###
 
@@ -56,8 +56,8 @@ def predict(img) -> Tuple[Dict, float]:
 
 # Create title, description and article strings 
 title = "Phân loại trái cây qua hình ảnh 🍓🍉🍌🥑🍏"
-description = "Phân loại trái cây qua hình ảnh dùng EfficientNetB0 feature extractor computer vision model."
-article = "Created by team 9: Xử lý ảnh và ứng dụng - CS406.N11.  Source Code: https://github.com/19522515/PhanLoaiTraiCay "
+description = "Phân loại trái cây qua hình ảnh dùng EfficientNetB0 feature extractor computer vision model. Hiện tại đã phân loại được 19 loại trái cây Việt Nam gồm: Táo, Bơ, Chuối, Hồng Xiêm, Quýt, Dừa, Thanh long, Sầu riêng, Nho, Bưởi, Chanh, Nhãn, Vải, Cam, Đu Đủ, Dứa, Lựu, Dâu, Dưa hấu với tỉ lệ chính xác hơn 91%."
+article = "Created by team 9: Xử lý ảnh và ứng dụng - CS406.N11.  Public Source Code: https://github.com/19522515/PhanLoaiTraiCay "
 
 # Create examples list from "examples/" directory
 example_list = [["examples/" + example] for example in os.listdir("examples")]
