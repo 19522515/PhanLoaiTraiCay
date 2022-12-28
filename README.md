@@ -9,4 +9,5 @@ pinned: false
 license: mit
 ---
 
-An application to detect VietNam Fruit
+Phân loại trái cây qua hình ảnh 🍓🍉🍌🥑🍏 dùng EfficientNetB0 feature extractor computer vision model.
+DEMO: https://huggingface.co/spaces/VietVuiVe/PhanLoaiTraiCay
